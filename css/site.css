@@ -1,0 +1,47 @@
+.header {
+	background-color: #cccccc;
+/* 	height: 100px; */
+}
+
+.header .title {
+
+}
+
+.header .contact {
+	/* float: right; */
+}
+
+.header .contact h4 {
+	text-align: right;
+}
+
+.photo {
+	background-color: rgb(215, 213, 207);
+}
+
+.photo .columns {
+	padding-right: 0px;
+}
+
+.photo img {
+	float: right;
+}
+
+.area {
+	background-color: #aaaaaa;
+	padding-top: 20px;
+}
+
+.about {
+	background-color: #cccccc;
+	padding-top: 20px;
+}
+
+.contact {
+	background-color: #aaaaaa;
+	padding-top: 20px;
+}
+
+img {
+	max-width: 100%;
+}
