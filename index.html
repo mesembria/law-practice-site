@@ -4,19 +4,37 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Davis Law</title>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/site.css" />
+	<link rel="stylesheet" href="css/fonticons.css" />
     <script src="js/vendor/modernizr.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script>
+		function initialize() {
+		    var map_canvas = document.getElementById('map_canvas');
+			var map_options = {
+								center: new google.maps.LatLng(37.288464, -80.0669265),
+								zoom: 15,
+								mapTypeId: google.maps.MapTypeId.ROADMAP
+							};
+			var map = new google.maps.Map(map_canvas, map_options);
+		}
+		//google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
   </head>
   <body>
     
     <div class="row header"> 
-		<div class="large-7 columns">
+		<div class="large-7 medium-8 columns title">
 			<h2>The Davis Law Practice</h2>	
 		</div>
-		<div class="large-5 columns contact">
-			<h4>540.123.4567</h3>
-			<h4>Contact for a free consultation</h3>
+		<div class="large-5 medium-4 columns contact">
+			<h4>
+			<i class="icon-phone"></i>540.123.4567<br/>
+			<i class="icon-mail"></i>nanda@davislawpractice.com<br/>
+			<!-- Contact for a free consultation -->
+			</h4>
 		</div>
     </div>
 
@@ -24,6 +42,7 @@
     <div class="row photo">
       <div class="large-12 columns">
 		<img src="img/Header.jpg" />
+		<h1 class="show-for-large-up">Helping you<br/> get on with your life</h1>
       </div>	
     </div>
   
@@ -31,55 +50,108 @@
     <div class="row area">
 	  <div class="large-4 columns">
 		<div class="panel">
-			<h4>Family</h4>
+			<h3>Family</h3>
 			<p>
 			  A divorce is a time of crisis for the whole family, but there is life on the other side. 
 			  You need an objective lawyer who will listen to what you want, and guide you through the 
-			  legal system to make sure your interests are being protected.<br/>
-			  <b>Divorce * Child Custody * Child Support * Alimony * Property Division * Pension Division</b> 
+			  legal system to make sure your interests are being protected.<br/><br/>
+			  <b>Divorce &middot; Child Custody &middot; Child Support &middot; Alimony &middot; Property Division &middot; Pension Division</b> 
 			</p>
 		</div>
 	  </div>
 	  
 	  <div class="large-4  columns">
 		<div class="panel">
-			<h4>Criminal</h4>
+			<h3>Criminal</h3>
 			<p>
 			Facing criminal charges? Worried about the impact of a conviction on your job and your family?
 			Police and prosecutors will work quickly to build a case against you.  You need a lawyer who is 
-			ready to go to court to stand up for your rights.<br/>
-			<b>Drug crimes * Assault * Theft * Fraud * Probation Violation</b>		
+			ready to go to court to stand up for your rights.<br/><br/>
+			<b>Drug crimes &middot; Assault &middot; Theft &middot; Fraud &middot; Probation Violation</b>		
 			</p>
 		</div>
 	  </div>
 	  
-	  <div class="large-4  columns">
+	  <div class="large-4 columns">
 		<div class="panel">
-			<h4>Traffic</h4>
+			<h3>Traffic</h3>
 			<p>
 			Traffic convictions can have serious consequences, causing high insurance premiums, fines, 
 			suspension of your license, possibly jail time, and in some cases can cause you to lose your job.  
-			You need a lawyer to help you get the best possible outcome.<br/>
-			<b>DUI/DWI * Reckless Driving * Speeding * Driving on Suspended</b>
+			You need a lawyer to help you get the best possible outcome.<br/><br/>
+			<b>DUI/DWI &middot; Reckless Driving &middot; Speeding &middot; Driving on Suspended</b>
 			</p>
 		</div>
 	  </div>
 	</div>	
    
-   
-    <div class="row about">
+   <div class="row about">
 	  <div class="large-12 columns">
-		<h3>About Section</h3>
-		<p>Duis non tellus odio. Fusce tincidunt, nisl vel ornare gravida, urna turpis tristique orci, eu pharetra ante sapien non turpis. Duis est neque, semper at pellentesque in, laoreet id purus. Nunc porta tellus ante, at bibendum nibh dapibus vitae. Sed sed pellentesque neque. Cras lobortis lorem vel turpis tempus egestas. Sed orci turpis, malesuada vel ligula et, rhoncus consequat justo. Sed commodo, dolor posuere interdum fermentum, lectus justo lacinia felis, id pretium nunc dolor sed erat. Sed interdum vehicula ipsum sit amet ultrices. Suspendisse imperdiet malesuada orci, nec sollicitudin nisl dignissim eu. Morbi rhoncus magna malesuada elementum faucibus. Aenean vel quam vitae justo tincidunt sollicitudin vel et lorem. Praesent eget fringilla lacus. Aenean quis blandit tortor.</p>
-	  </div>		
+		<h3>About Me</h3>
+		</div>
+	</div>
+	
+    <div class="row about">
+	  <div class="large-7 columns">
+		<p>
+			Before moving to the Roanoke Valley, Nanda was an attorney at the U.S. Department of Labor, in Washington, D.C., 
+			where she worked closely with two administrative law judges, writing their decisions and orders regarding a wide 
+			variety of employment related statutes.
+			</p>
+			<p>			
+			Nanda graduated magna cum laude from George Mason University school of law in 2012.  During law school she worked 
+			at the law school’s domestic relations clinic, helping individuals who could not afford attorneys get uncontested 
+			divorces.  She was also on the school’s national moot court team.  Prior to graduating from law school she worked 
+			in a variety of legal settings, including Bernhard, Gardner & Mickelsen (a criminal and family law practice), and 
+			the chambers of the Honorable Stanley P. Klein, of the Fairfax County Circuit Court.
+			</p>
+			<p>
+			She lives in Salem with her husband and golden retriever mix.
+			</p>
+	  </div>
+		<div class="large-5 columns">
+		<h5>Licenses and Certifications:</h5>
+		<ul>
+			<li>Licensed to Practice Law in Commonwealth of Virginia since 2012</li>
+			<li>Certified by the Virginia Indigent Defense Commission to serve as court appointed counsel in misdemeanor cases</li>
+		</ul>
+		<h5>Education</h5>
+		<ul>
+			<li>George Mason University School of Law, Magna Cum Laude 2012</li>
+			<li>University of Virginia, B.A. Philosophy 2008</li>
+		</ul>	
+		</div>
     </div>
     
+	<div class="row map">
+      <div class="large-12 columns">
+		<div id="map_canvas"></div>
+      </div>  
+    </div>	
 	
 	<div class="row contact">
-      <div class="large-12 columns">
-		<h3>Contact Section</h3>
+      <div class="large-4 medium-4 columns">
+		<h3>Contact Me</h3>
+		<h5>The Davis Law Practice<br/>
+		123 Main St<br/>
+		Salem, VA 24153</h5>
       </div>  
+      <div class="large-4 medium-4 columns secondary">
+		<h5>Phone: 540.123.4567</h5>
+		<h5>Fax: 540.123.8901</h5>
+      </div>  
+      <div class="large-4 medium-4 columns secondary">
+		<h5>Facebook</h5>
+		<h5>Linked In</h5>
+		<h5>Other Link</h5>
+      </div>  	  
     </div>
+	
+	<div class="row footer">
+      <div class="large-12 columns">
+		<h6>&#0169;2014 The Davis Law Practice, All Rights Reserved | Disclaimer</h6>
+      </div>  
+    </div>	
 	
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>

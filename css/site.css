@@ -1,10 +1,23 @@
+    @font-face {
+      font-family: "Gentium Basic Regular";
+      src: url("../font/GenBasR.ttf");
+}
+
+h1, h2, h3{
+	font-family: "Gentium Basic Regular", serif;
+	}
+
 .header {
 	background-color: #cccccc;
-/* 	height: 100px; */
 }
 
 .header .title {
+	top: 27px;
+}
 
+.header h2 {
+	
+	font-size: 3rem;
 }
 
 .header .contact {
@@ -17,6 +30,11 @@
 
 .photo {
 	background-color: rgb(215, 213, 207);
+}
+
+.photo h1 {
+	margin: 50px 0 0 20px;
+	font-size: 4.5rem;
 }
 
 .photo .columns {
@@ -34,12 +52,37 @@
 
 .about {
 	background-color: #cccccc;
-	padding-top: 20px;
+}
+
+#map_canvas {
+
+	height: 300px;
+
+}.map .columns {
+	padding: 0px;
 }
 
 .contact {
-	background-color: #aaaaaa;
-	padding-top: 20px;
+
+}
+
+.contact h3 {
+
+}
+
+.contact .secondary {
+	padding-top: 40px;
+}
+
+.footer {
+	background-color: #666666;
+	padding: 5px 0 5px 0;
+	height: 30px;
+}
+
+.footer h6 {
+	color: #efefef;
+	font-size: 0.7em;
 }
 
 img {
