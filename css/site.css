@@ -11,20 +11,33 @@ h1, h2, h3{
 	background-color: #cccccc;
 }
 
-.header .title {
-	top: 27px;
-}
 
 .header h2 {
-	
-	font-size: 3rem;
+	font-size: 2.3125rem;
 }
 
-.header .contact {
-	/* float: right; */
+/* Large */
+@media only screen and (min-width: 64.063em) {
+
+	.header h2 {
+		font-size: 3rem;
+	}
+
+	.header .title {
+		top: 24px;
+	}
 }
 
-.header .contact h4 {
+/* Medium */
+@media only screen and (min-width: 40.063em) {
+
+	.header .title {
+		top: 20px;
+	}
+
+}
+
+.header .contact h5 {
 	text-align: right;
 }
 
@@ -77,12 +90,12 @@ h1, h2, h3{
 .footer {
 	background-color: #666666;
 	padding: 5px 0 5px 0;
-	height: 30px;
+	
 }
 
 .footer h6 {
 	color: #efefef;
-	font-size: 0.7em;
+	font-size: 0.9em;
 }
 
 img {
