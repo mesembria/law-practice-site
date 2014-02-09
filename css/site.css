@@ -11,10 +11,28 @@ h1, h2, h3{
 	background-color: #cccccc;
 }
 
-
-.header h2 {
-	font-size: 2.3125rem;
+.header h5 {
+	font-size: 1.0rem;
 }
+
+/* Medium */
+@media only screen and (min-width: 40.063em) {
+
+	.header h2 {
+		font-size: 2.3125rem;
+	}
+
+	.header .title {
+		top: 20px;
+	}
+	
+	.header .contact h5 {
+	text-align: right;
+	font-size: 1.125rem;
+	}
+
+}
+
 
 /* Large */
 @media only screen and (min-width: 64.063em) {
@@ -28,18 +46,9 @@ h1, h2, h3{
 	}
 }
 
-/* Medium */
-@media only screen and (min-width: 40.063em) {
 
-	.header .title {
-		top: 20px;
-	}
 
-}
 
-.header .contact h5 {
-	text-align: right;
-}
 
 .photo {
 	background-color: rgb(215, 213, 207);
