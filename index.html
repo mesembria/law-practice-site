@@ -10,6 +10,16 @@
     <script src="js/vendor/modernizr.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	<script>
+		window.onload = function() {
+			var hmail = document.getElementById('hmail');
+			var cmail = document.getElementById('cmail');
+			var domain = 'davislawpractice';
+			var name = 'nanda.davis';
+			
+			hmail.innerHTML = cmail.innerHTML = name + '@' + domain + '.com';
+		}
+	</script>
+	<script>
 		function initialize() {
 		    var map_canvas = document.getElementById('map_canvas');
 			var map_options = {
@@ -40,7 +50,7 @@
 		<div class="large-6 medium-6 columns contact">
 			<h5>
 			<i class="icon-phone"></i><a href="tel:5401234567">540.123.4567</a><br/>
-			<i class="icon-mail-alt"></i><a href="mailto:nanda.davis@davislawpractice.com">nanda.davis@davislawpractice.com</a>
+			<i class="icon-mail-alt"></i><a id='hmail'></a>
 			<!-- Contact for a free consultation -->
 			</h5>
 		</div>
@@ -146,7 +156,7 @@
       </div>  
       <div class="large-4 medium-4 columns secondary">
 		<h5>Phone: <a href="tel:5401234567">540.123.4567</a></h5>
-		<h5>Email: <a href="mailto:nanda.davis@davislawpractice.com">nanda.davis@davislawpractice.com</a></h5>
+		<h5>Email: <a id="cmail"></a></h5>
       </div>  
       <div class="large-4 medium-4 columns secondary">
 		<h5>Facebook</h5>
