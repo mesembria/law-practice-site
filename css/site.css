@@ -7,20 +7,6 @@ h1, h2, h3{
 	font-family: "Gentium Basic Regular", serif;
 	}
 
- .consultation {
-	background-color: rgba( 30, 30, 30, 0.45 );
-	position: absolute;
-	width: 100%;
-	color: white;
-
-	font-size: 1.1rem;	
-	padding: 0.7rem;		
-	top: 103px;
-	height: 40px;		
-} 
-
-
-	
 	
 .header {
 	background-color: #535353;
@@ -36,24 +22,64 @@ h1, h2, h3{
 	color: white;
 }
 
+
+.photo h1 {
+	margin: 30px 0 0 20px;
+	font-size: 1rem;
+	line-height: 1.2;
+	position: absolute;
+	display: none !important;
+}
+
+
+.consultation {
+	background-color: rgba( 30, 30, 30, 0.45 );
+	position: absolute;
+	width: 100%;
+	color: white;
+
+	font-size: 1.1rem;	
+	padding: 0.7rem;		
+	bottom: 0px;		
+}
+
+
+
 /* Medium */
 @media only screen and (min-width: 40.063em) {
 
 	.header h2 {
-		font-size: 2.3125rem;
+	  font-size: 2.3125rem;
 	}
 
 	.header .title {
-		top: 20px;
+	  top: 20px;
 	}
 	
 	.header .contact h5 {
-	text-align: right;
-	font-size: 1.125rem;
+	  text-align: right;
+	  font-size: 1.125rem;
 	}
 
+	.consultation {
+	  font-size: 1.8rem;	
+	  padding: 0.7rem;			
+	}
+	
+	.photo h1 {
+	  font-size: 3rem;
+	  display: none !important;
+	}
+	
 }
 
+/* Upper Medium */
+@media only screen and (min-width: 53.063em) {
+
+  .photo h1 {
+    display: inherit !important;
+  }
+}
 
 /* Large */
 @media only screen and (min-width: 64.063em) {
@@ -66,24 +92,24 @@ h1, h2, h3{
 		top: 24px;
 	}
 	
-	.consultation {
+ 	.consultation {
 		font-size: 2rem;	
-		padding: 1rem;		
-		top: 418px;
-		height: 60px;	
+		padding: 1rem;			
 	}
+
+	.photo h1 {
+	  font-size: 4.4rem;
+	  display: inherit !important;
+	}
+	
 }
 
 
 .photo {
 	background-color: rgb(204, 204, 204);
+	position: relative;
 }
 
-.photo h1 {
-	margin: 30px 0 0 20px;
-	font-size: 4.4rem;
-	line-height: 1.2;
-}
 
 .photo .columns {
 	padding-right: 0px;
@@ -93,9 +119,12 @@ h1, h2, h3{
 	float: right;
 }
 
+
+
 .area {
 	background-color: #aaaaaa;
 	padding-top: 20px;
+
 }
 
 .about {
