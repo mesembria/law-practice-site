@@ -102,6 +102,7 @@ h1, h2, h3{
 	  display: inherit !important;
 	}
 	
+	
 }
 
 
@@ -128,28 +129,26 @@ h1, h2, h3{
 }
 
 .about {
-	background-color: #cccccc;
+	background-color: #dbdbdb;
 }
 
 #map_canvas {
-
 	height: 300px;
+}
 
-}.map .columns {
+.map .columns {
 	padding: 0px;
 }
 
-.contact {
-
-}
-
-.contact h3 {
-
-}
-
 .contact .secondary {
-	padding-top: 40px;
+  margin-top: 20px;
 }
+
+.contact .social {
+  font-size: 3.5em;
+  color: #258faf;
+}
+
 
 .footer {
 	background-color: #666666;
