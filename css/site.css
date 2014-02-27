@@ -1,6 +1,6 @@
-    @font-face {
-      font-family: "Gentium Basic Regular";
-      src: url("../font/GenBasR.ttf");
+@font-face {
+  font-family: "Gentium Basic Regular";
+  src: url("../font/GenBasR.ttf");
 }
 
 h1, h2, h3{
@@ -9,8 +9,17 @@ h1, h2, h3{
 
 	
 .header {
-	background-color: #535353;
+	/*background-color: #535353;*/
+    background-color: rgba( 69, 113, 138, 1 );
 	margin: auto;
+}
+
+a {
+  color: white;
+}
+
+a:hover, a:focus {
+  color: #dddddd;
 }
 
 .header h2 {
@@ -33,7 +42,8 @@ h1, h2, h3{
 
 
 .consultation {
-	background-color: rgba( 30, 30, 30, 0.45 );
+	/*background-color: rgba( 30, 30, 30, 0.45 );*/
+    background-color: rgba( 69, 113, 138, 0.60 );
 	position: absolute;
 	width: 100%;
 	color: white;
@@ -43,7 +53,10 @@ h1, h2, h3{
 	bottom: 0px;		
 }
 
-
+.contact .social {
+  font-size: 3em;
+  color: white/*#258faf*/;
+}
 
 /* Medium */
 @media only screen and (min-width: 40.063em) {
@@ -70,6 +83,10 @@ h1, h2, h3{
 	  font-size: 3rem;
 	  display: none !important;
 	}
+    
+    .contact .secondary {
+      margin-top: 16px; 
+    }  
 	
 }
 
@@ -102,7 +119,13 @@ h1, h2, h3{
 	  display: inherit !important;
 	}
 	
-	
+	.contact .social {
+      font-size: 3.5em;
+    }
+    
+    .contact .secondary {
+      margin-top: 16px; 
+    }    
 }
 
 
@@ -123,9 +146,12 @@ h1, h2, h3{
 
 
 .area {
-	background-color: #aaaaaa;
+	/*background-color: #2D3C45 aaaaaa*/;
 	padding-top: 20px;
+}
 
+.area h3 {
+  font-weight: bold;
 }
 
 .about {
@@ -140,15 +166,18 @@ h1, h2, h3{
 	padding: 0px;
 }
 
-.contact .secondary {
-  margin-top: 20px;
+.contact {
+   background-color: rgba( 69, 113, 138, 1 );
 }
 
-.contact .social {
-  font-size: 3.5em;
-  color: #258faf;
+.contact h5 {
+   color: white;
 }
 
+.contact .title {
+  font-weight: bold;
+  margin-bottom: 0px;
+}
 
 .footer {
 	background-color: #666666;
