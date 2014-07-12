@@ -4,36 +4,68 @@
 }
 
 h1, h2, h3{
-	font-family: "Gentium Basic Regular", serif;
-	}
+    font-family: "Gentium Basic Regular", serif;
+}
 
 	
 .header {
-	/*background-color: #535353;*/
-    background-color: rgba( 69, 113, 138, 1 );
-	margin: auto;
+    background-color: #2d3051;
+    margin: auto;
 }
 
 a {
-  color: white;
+    color: white;
 }
 
 a:hover, a:focus {
-  color: #dddddd;
+    color: #dddddd;
 }
 
 .header h2 {
-	color: white;
+    color: white;
 }
 
 .header h5 {
-	font-size: 1.0rem;
-	color: white;
+    font-size: 1.0rem;
+    color: white;
+}
+
+.page-header {
+
+    /*background-color: rgba( 69, 113, 138, 0.60 );	*/
+    background-color: #cccccc;
+    width: 100%;
+}
+
+.areas-main .list {
+
+}
+
+.areas-main .list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+} 
+
+
+.areas-main .list ul a {
+    display: block;
+    padding: 5px 5px 5px 0.5em;
+    margin: 5px 0 5px 0;
+    color: #000;
+    background-color: #ccc;
+    width: 100%;
 }
 
 
+
+.areas-main .short-form {
+    padding-top: 1em;
+}
+
 .photo h1 {
-	margin: 30px 0 0 20px;
+	/*margin: 30px 0 0 20px;*/
+    margin: 1em 0 0 0;
 	font-size: 1rem;
 	line-height: 1.2;
 	position: absolute;
@@ -42,20 +74,20 @@ a:hover, a:focus {
 
 
 .consultation {
-	/*background-color: rgba( 30, 30, 30, 0.45 );*/
+    /*background-color: rgba( 30, 30, 30, 0.45 );*/
     background-color: rgba( 69, 113, 138, 0.60 );
-	position: absolute;
-	width: 100%;
-	color: white;
-
-	font-size: 1.1rem;	
-	padding: 0.7rem;		
-	bottom: 0px;		
+    position: absolute;
+    width: 100%;
+    color: white;
+    
+    font-size: 1.1rem;	
+    padding: 0.7rem;		
+    bottom: 0px;		
 }
 
 .contact .social {
-  font-size: 3em;
-  color: white/*#258faf*/;
+    font-size: 3em;
+    color: white;
 }
 
 /* Medium */
@@ -80,7 +112,6 @@ a:hover, a:focus {
 	}
 	
 	.photo h1 {
-	  font-size: 3rem;
 	  display: none !important;
 	}
     
@@ -90,16 +121,28 @@ a:hover, a:focus {
 	
 }
 
-/* Upper Medium */
-@media only screen and (min-width: 53.063em) {
-
-  .photo h1 {
+@media only screen and (min-width: 640px) {
+    .photo h1 {
+	margin-top: 0.3em;
+	font-size: 2.5rem;
     display: inherit !important;
-  }
+    }
 }
 
+
+
+
+@media only screen and (min-width: 900px) {
+    .photo h1 {
+	margin-top: 1.2em;
+	font-size: 3rem;
+    display: inherit !important;
+    }
+}
+
+
 /* Large */
-@media only screen and (min-width: 64.063em) {
+@media only screen and (min-width: 70.0em) {
 
 	.header h2 {
 		font-size: 3rem;
@@ -115,7 +158,7 @@ a:hover, a:focus {
 	}
 
 	.photo h1 {
-	  font-size: 4.4rem;
+	  font-size: 4.0rem;
 	  display: inherit !important;
 	}
 	
@@ -136,11 +179,14 @@ a:hover, a:focus {
 
 
 .photo .columns {
-	padding-right: 0px;
+	/*padding-right: 0px;*/
 }
 
 .photo img {
-	float: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    /*margin: 1em 1em 1em 0.5em;*/
+    
 }
 
 
@@ -167,7 +213,7 @@ a:hover, a:focus {
 }
 
 .contact {
-   background-color: rgba( 69, 113, 138, 1 );
+   background-color: #2d3051;
 }
 
 .contact h5 {
